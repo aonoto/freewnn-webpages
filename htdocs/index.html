@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>FreeWnn@SourceForge.jp Web Page</title></head>
+
+  <body>
+    <h1>FreeWnn @ SourceForge.jp Webページ(暫定版)</h1>
+
+    <p>こちらはSourceForge.jpで運用しているページです。
+    (<a href="http://freewnn.sourceforge.jp/index-en.html">Brief information in English</a>)</p>
+
+<p>
+[<a href="#whatis">FreeWnnとは</a>]
+[<a href="#news">News</a>]
+[<a href="#download">Download</a>]
+[<a href="#maillist">メーリングリスト</a>]
+[<a href="#help-develop">開発にご協力を</a>]
+[<a href="#links">リンク</a>]
+</p>
+<hr>
+
+    <h2><a name="whatis">FreeWnnとは</a></h2>
+<ul>
+<li>クライアント・サーバ型のかな漢字変換システム
+</li><li>日本語・中国語(簡体字・繁体字)・韓国(朝鮮)語の変換に対応
+</li><li>過去にX11のcontribなどで配布されていたWnn4.2を基にしたシステム
+ (オムロンソフトウェアからは発展させた(proprietaryな)製品が販売されて
+います)
+</li><li>GNU General Public License (GPL) V2 (or later) / 同 Lesser General Public
+License (LGPL) V2 (or later)の元で配布しているFree Softwareです
+</li></ul>
+  <!--  変更点とかは後日加えていこう。 -->
+
+<h2><a name="news">News</a></h2>
+
+<p>tomo.gr.jpからSourceForge.jpに活動の軸を移しました。2012年5月時点では
+ソースコード・リリースファイル(や、このペー
+ジ)のホスティングと<a href="#maillist">メーリングリスト</a>が運用され
+ています。</p>
+
+
+<p><a href="http://sourceforge.jp/news/?group_id=1245">プロジェクトのニュースページ</a>
+にも情報があるかもしれません。</p>
+
+<h2>FreeWnn Project との関係?</h2>
+
+<p><!--  実際よく分かっていませんが… -->
+同Projectからやや距離をおき、開発を続けるための受け皿(あるいはつなぎ)
+のようなものと考えています。ただ人的資源不足により、開発ペースはここ数
+年の傾向と変わらないと思います。何かお気づきの点があれば報告・パッチな
+どでご協力いただければ幸いです。</p>
+
+<h2><a name="download">Download</a></h2>
+
+<p>現時点での最新版は1.1.1-a022です(2013/Aug/05リリース)。alpha版です
+が、正式にリリースされている 1.1はほとんど管理されていませんのでこちら
+をお使いになった方がよいと思います。</p>
+
+<p>ソースコードは
+<a href="http://www.tomo.gr.jp/FreeWnn/ftp.html">FTPサイト</a>か
+SourceForge.jpの
+<a href="http://sourceforge.jp/projects/freewnn/files/">リリースファイル</a>
+ページからダウンロードできます。
+このページから構築済みバイナリの配布を行う予定は現状ではありません。</p>
+
+<script src="http://sourceforge.jp/projects/freewnn/releases/compact.js" type="text/javascript" charset="utf-8"></script>
+
+<p>開発中のコードはSourceForge.jp 内の
+<a href="http://sourceforge.jp/cvs/view/freewnn/FreeWnn/">CVSレポジトリ</a>
+にあります。
+Anonymous CVSを使用する場合は例えば以下のように実行することで取得でき
+ます。
+</p>
+<pre>cvs -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn login
+(パスワードは不要)
+cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn co FreeWnn
+</pre>
+<p>その他詳しくは
+<a href="http://sourceforge.jp/projects/freewnn/cvs/">CVSページ</a>
+をご覧ください。
+</p>
+
+<!-- cvs.m17n.orgの運用は2012年4月に終了しました。今までありがとうございました。 -->
+
+<h2><a name="maillist">メーリングリスト(ML)について</a></h2>
+
+<p>現時点では以下のMLを用意しています。それぞれのML紹介ページから加入
+することができます:</p>
+
+<ul>
+      <li><a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-users">freewnn-users ML</a>:
+	開発者・利用者の枠を分けずに議論する場としてお使いください。
+	(<a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-users">加入</a> /
+	<a href="http://sourceforge.jp/projects/freewnn/lists/archive/users/">アーカイブ</a>)
+      </li><li><a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-cvs">freewnn-cvs ML</a>:
+	SourceForge.jp側のソースツリーに変更があったときに通知します。
+	投稿はfreewnn-usersの方にお願いします。
+	(<a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-cvs">加入</a> /
+	<a href="http://sourceforge.jp/projects/freewnn/lists/archive/cvs/">アーカイブ</a>)
+
+</li></ul>
+
+<p>freewnn ML (freewnn at tomo.gr.jp)は終了しました。(アーカイブは
+<a href="http://www.tomo.gr.jp/users/wnn/index.html">http://www.tomo.gr.jp/users/wnn/index.html</a>を参照。)
+<a href="http://www.tomo.gr.jp/wnn/wnn-yogo.html#ml">wnn-users ML</a>も
+2012年3月に終了しました。</p>
+
+<p><a href="http://sourceforge.jp/mail/?group_id=1245">プロジェクトのメーリングリストページ</a>
+にも情報があるかもしれません。</p>
+
+<h2><a name="help-develop">開発にご協力を</a></h2>
+
+<p>先述の通り、開発ペースは相当遅いものになっています。
+以下のようなことをお手伝いいただけると大変ありがたいです。
+それ以外でもお手伝いいただけることがあればMLなどでご相談ください。</p>
+
+
+<ul>
+  <li>コンパイルできるか・意図通り動作するかテスト
+  <li>(特に失敗した場合は)<a href="#maillist">ML</a>や
+	<a href="http://sourceforge.jp/projects/freewnn/ticket/">チケット</a>でご報告いただく
+  <li>ソースコード・ドキュメント・manpageの改善案やパッチを
+MLやチケットで提案いただく
+</ul>
+
+<ul>
+  <li>最近使われている文字入力の枠組み(ex. IBus, SCIM)に対応した
+クライアントの開発
+  <li>MLの管理 (大体は購読者以外から届いたメールのチェックになると思われます)
+  <li>改良したソースファイルのcommit (要・SourceForge.jpアカウント、SSH公開鍵など)
+  <li>メンテナーとして開発の調整やリリースファイルの管理
+</ul>
+
+<H2>未記述</h2>
+<ul>
+<li>ドキュメントについて (当面はソースファイル内のドキュメントをご覧ください)
+</li></ul>
+
+<h2><a name="links">リンク</a></h2>
+
+<p><a href="http://sourceforge.jp/projects/freewnn/">SourceForge.jp内のプロジェクトページへ</a>
+</p>
+
+<p><a href="http://www.tomo.gr.jp/FreeWnn/">FreeWnn Project(本家) Webページへ</a>
+(<a href="http://freewnn.sourceforge.jp/mirror/">ミラー</a>)
+: freewnn.orgドメインでの運用は近く終了するので、リンク・ブックマーク等の
+変更をお願いします。(2014/Jan/02)
+</p>
+
+<hr>
+    <a href="http://sourceforge.jp/"><img src="http://sourceforge.jp/sflogo.php?group_id=1245" alt="SourceForge.jp" border="0" height="31" width="96"></a>
+    <hr>
+    <address>暫定版文責・Tomoki Aono (aonoto at users.sourceforge.jp)</address>
+<!-- Created: Sun Aug 15 03:09:50 JST 2004 -->
+<!-- Last modified: 2004/Sep/26 -->
+<!-- hhmts start -->
+Last modified: Fri Jan  3 01:40:13 JST 2014
+<!-- hhmts end -->
+</body></html>

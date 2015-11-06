@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} =www.freewnn.org [OR]
+RewriteCond %{HTTP_HOST} =freewnn.org
+RewriteRule (.*)	http://www.tomo.gr.jp/FreeWnn/$1	[R]
+# RewriteRule (.*)	mirror/$1	[L]
+# RewriteRule ^/(.*)$	http://freewnn.sourceforge.jp/mirror$1	[R]
+
+# RewriteRule ^$	/mirror/	[L]
+# OK # RewriteRule mirror-index.html$	mirror/	[L]
+# NG #RewriteRule ^/(.*)	mirror/$1	[L]
+# OK # RewriteRule test.html$		test-rewritten.html [L]
+# NG #RewriteRule ^/$         /home/groups/f/fr/freewnn/htdocs/mirror/        [L]
+
+ErrorDocument 404 default
