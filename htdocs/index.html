@@ -2,10 +2,15 @@
 <html><head><title>FreeWnn@SourceForge.jp Web Page</title></head>
 
   <body>
-    <h1>FreeWnn @ SourceForge.jp Webページ(暫定版)</h1>
+    <h1>FreeWnn @ OSDN Webページ(暫定版)</h1>
 
-    <p>こちらはSourceForge.jpで運用しているページです。
-    (<a href="http://freewnn.sourceforge.jp/index-en.html">Brief information in English</a>)</p>
+    <p>こちらはOSDN (旧・SourceForge.jp)で運用しているページです。
+    (<a href="http://freewnn.osdn.jp/index-en.html" target="_top">Brief information in English</a>)</p>
+    <p>このページへのリンク先がまだsourceforge.jpの場合は、osdn.jp(例・
+      <a href="http://freewnn.osdn.jp/" target="_top">freewnn.osdn.jp</a>。MLは
+      <a href="#maillist">別項</a>
+      参照)になるように変更してください。freewnn.orgについてはまだ利用
+      できますのですぐに変更する必要はありません。</p>
 
 <p>
 [<a href="#whatis">FreeWnnとは</a>]
@@ -31,13 +36,13 @@ License (LGPL) V2 (or later)の元で配布しているFree Softwareです
 
 <h2><a name="news">News</a></h2>
 
-<p>tomo.gr.jpからSourceForge.jpに活動の軸を移しました。2012年5月時点では
+<p>tomo.gr.jpからOSDN(当時はSourceForge.jp)に活動の軸を移しました。2015年12月時点では
 ソースコード・リリースファイル(や、このペー
 ジ)のホスティングと<a href="#maillist">メーリングリスト</a>が運用され
 ています。</p>
 
 
-<p><a href="http://sourceforge.jp/news/?group_id=1245">プロジェクトのニュースページ</a>
+<p><a href="http://osdn.jp/projects/freewnn/news/" target="_top">プロジェクトのニュースページ</a>
 にも情報があるかもしれません。</p>
 
 <h2>FreeWnn Project との関係?</h2>
@@ -50,32 +55,37 @@ License (LGPL) V2 (or later)の元で配布しているFree Softwareです
 
 <h2><a name="download">Download</a></h2>
 
-<p>現時点での最新版は1.1.1-a022です(2013/Aug/05リリース)。alpha版です
+<p>現時点での最新版は1.1.1-a023です(2015/May/24リリース)。alpha版です
 が、正式にリリースされている 1.1はほとんど管理されていませんのでこちら
 をお使いになった方がよいと思います。</p>
 
 <p>ソースコードは
-<a href="http://www.tomo.gr.jp/FreeWnn/ftp.html">FTPサイト</a>か
-SourceForge.jpの
-<a href="http://sourceforge.jp/projects/freewnn/files/">リリースファイル</a>
+<a  href="http://www.tomo.gr.jp/FreeWnn/ftp.html" target="_top">FTPサイト</a>か
+OSDNの
+<a href="https://osdn.jp/projects/freewnn/releases/" target="_top">リリースファイル</a>
 ページからダウンロードできます。
 このページから構築済みバイナリの配布を行う予定は現状ではありません。</p>
 
-<script src="http://sourceforge.jp/projects/freewnn/releases/compact.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  var sfjp_widget_width = null;
+  var sfjp_widget_customcss = null;
+</script>
+<script src="//osdn.jp/projects/freewnn/files/compact.js" type="text/javascript" charset="utf-8"></script>
+<!-- need protocol spec.? -->
 
-<p>開発中のコードはSourceForge.jp 内の
-<a href="http://sourceforge.jp/cvs/view/freewnn/FreeWnn/">CVSレポジトリ</a>
+<p>開発中のコードはOSDN内の
+<a href="https://osdn.jp/cvs/view/freewnn/FreeWnn/" target="_top">CVSレポジトリ</a>
 にあります。
 Anonymous CVSを使用する場合は例えば以下のように実行することで取得でき
 ます。
 </p>
-<pre>cvs -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn login
+<pre>cvs -d:pserver:anonymous@cvs.osdn.jp:/cvsroot/freewnn login
 (パスワードは不要)
-cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn co FreeWnn
+cvs -z3 -d:pserver:anonymous@cvs.osdn.jp:/cvsroot/freewnn co FreeWnn
 </pre>
 <p>その他詳しくは
-<a href="http://sourceforge.jp/projects/freewnn/cvs/">CVSページ</a>
-をご覧ください。
+<a href="https://osdn.jp/projects/freewnn/scm/" target="_top">コードリポジトリリストのページ</a>
+をご覧ください。(2015年12月時点ではソースコードはGitでは管理していません。)
 </p>
 
 <!-- cvs.m17n.orgの運用は2012年4月に終了しました。今までありがとうございました。 -->
@@ -86,24 +96,24 @@ cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn co FreeWnn
 することができます:</p>
 
 <ul>
-      <li><a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-users">freewnn-users ML</a>:
+  <li><a href="http://lists.osdn.me/mailman/listinfo/freewnn-users" target="_top">freewnn-users ML</a>:
 	開発者・利用者の枠を分けずに議論する場としてお使いください。
-	(<a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-users">加入</a> /
-	<a href="http://sourceforge.jp/projects/freewnn/lists/archive/users/">アーカイブ</a>)
-      </li><li><a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-cvs">freewnn-cvs ML</a>:
-	SourceForge.jp側のソースツリーに変更があったときに通知します。
+	(<a href="http://lists.osdn.me/mailman/listinfo/freewnn-users">加入</a> /
+	<a href="http://osdn.jp/projects/freewnn/lists/archive/users/">アーカイブ</a>)
+      </li><li><a href="http://lists.osdn.me/mailman/listinfo/freewnn-cvs" target="_top">freewnn-cvs ML</a>:
+	OSDN側のソースツリーに変更があったときに通知します。
 	投稿はfreewnn-usersの方にお願いします。
-	(<a href="http://lists.sourceforge.jp/mailman/listinfo/freewnn-cvs">加入</a> /
-	<a href="http://sourceforge.jp/projects/freewnn/lists/archive/cvs/">アーカイブ</a>)
+	(<a href="http://lists.osdn.me/mailman/listinfo/freewnn-cvs">加入</a> /
+	<a href="http://osdn.jp/projects/freewnn/lists/archive/cvs/">アーカイブ</a>)
 
 </li></ul>
 
 <p>freewnn ML (freewnn at tomo.gr.jp)は終了しました。(アーカイブは
-<a href="http://www.tomo.gr.jp/users/wnn/index.html">http://www.tomo.gr.jp/users/wnn/index.html</a>を参照。)
+<a href="http://www.tomo.gr.jp/users/wnn/index.html" target="_top">http://www.tomo.gr.jp/users/wnn/index.html</a>を参照。)
 <a href="http://www.tomo.gr.jp/wnn/wnn-yogo.html#ml">wnn-users ML</a>も
 2012年3月に終了しました。</p>
 
-<p><a href="http://sourceforge.jp/mail/?group_id=1245">プロジェクトのメーリングリストページ</a>
+<p><a href="https://osdn.jp/mail/?group_id=1245" target="_top">プロジェクトのメーリングリストページ</a>
 にも情報があるかもしれません。</p>
 
 <h2><a name="help-develop">開発にご協力を</a></h2>
@@ -116,7 +126,7 @@ cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/freewnn co FreeWnn
 <ul>
   <li>コンパイルできるか・意図通り動作するかテスト
   <li>(特に失敗した場合は)<a href="#maillist">ML</a>や
-	<a href="http://sourceforge.jp/projects/freewnn/ticket/">チケット</a>でご報告いただく
+	<a href="https://osdn.jp/projects/freewnn/ticket/" target="_top">チケット</a>でご報告いただく
   <li>ソースコード・ドキュメント・manpageの改善案やパッチを
 MLやチケットで提案いただく
 </ul>
@@ -125,7 +135,7 @@ MLやチケットで提案いただく
   <li>最近使われている文字入力の枠組み(ex. IBus, SCIM)に対応した
 クライアントの開発
   <li>MLの管理 (大体は購読者以外から届いたメールのチェックになると思われます)
-  <li>改良したソースファイルのcommit (要・SourceForge.jpアカウント、SSH公開鍵など)
+  <li>改良したソースファイルのcommit (要・OSDNアカウント、SSH公開鍵など)
   <li>メンテナーとして開発の調整やリリースファイルの管理
 </ul>
 
@@ -136,22 +146,19 @@ MLやチケットで提案いただく
 
 <h2><a name="links">リンク</a></h2>
 
-<p><a href="http://sourceforge.jp/projects/freewnn/">SourceForge.jp内のプロジェクトページへ</a>
-</p>
+<p><a href="https://osdn.jp/projects/freewnn/" target="_top">OSDN内のプロジェクトページへ</a></p>
 
-<p><a href="http://www.tomo.gr.jp/FreeWnn/">FreeWnn Project(本家) Webページへ</a>
-(<a href="http://freewnn.sourceforge.jp/mirror/">ミラー</a>)
+<p><a href="http://www.tomo.gr.jp/FreeWnn/" target="_top">FreeWnn Project(本家) Webページへ</a>
+(<a href="http://freewnn.osdn.jp/mirror/" target="_top">ミラー</a>)
 : freewnn.orgドメインでの運用は近く終了するので、リンク・ブックマーク等の
 変更をお願いします。(2014/Jan/02)
 </p>
 
 <hr>
-    <a href="http://sourceforge.jp/"><img src="http://sourceforge.jp/sflogo.php?group_id=1245" alt="SourceForge.jp" border="0" height="31" width="96"></a>
-    <hr>
-    <address>暫定版文責・Tomoki Aono (aonoto at users.sourceforge.jp)</address>
+    <a href="https://osdn.jp/"><img src="//osdn.jp/sflogo.php?group_id=1245&type=2" width="125" height="39" border="0" alt="OSDN"></a><hr>
+    <address>暫定版文責・Tomoki Aono (aonoto at users.osdn.me)</address>
 <!-- Created: Sun Aug 15 03:09:50 JST 2004 -->
-<!-- Last modified: 2004/Sep/26 -->
 <!-- hhmts start -->
-Last modified: Fri Jan  3 01:40:13 JST 2014
+Last modified: Sat Dec 12 15:42:00 JST 2015
 <!-- hhmts end -->
 </body></html>
